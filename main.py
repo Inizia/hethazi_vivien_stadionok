@@ -11,4 +11,8 @@ print("3. feladat")
 print(f"\t 110 perces filmek száma: {fajlbeolvasas.szaztizperc()}")
 
 print("4. feladat")
-print(f"\t Ezeket a filmeket ajánljuk Önnek: {fajlbeolvasas.film_ajanlo()}")
+eredmeny = fajlbeolvasas.film_ajanlo()
+print(f"\t Ezeket a filmeket ajánljuk Önnek: {eredmeny}")
+
+print("5. feladat")
+fajlbeolvasas.fajl_beiras(eredmeny)

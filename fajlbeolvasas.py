@@ -65,8 +65,9 @@ def film_ajanlo():
 
 
 #A 4-es feladat eredményét írasd ki fájlba is!
-def fajl_beiras():
-    f = open("film2.txt", encoding="utf-8")
-    f.write(str(szaztizperc()))
+def fajl_beiras(eredmeny):
+    f = open("film2.txt", "w", encoding="utf-8")
+    #f.write(str(szaztizperc()))
+    f.write(str(eredmeny))
     f.close()
 
